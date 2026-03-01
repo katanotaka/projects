@@ -7,13 +7,13 @@ fn main() {
 
 
 loop {    
-    println!("Input your guess?");
+    println!("数当てクイズです。あなたの予想を入力してください:");
     let mut gu = String::new();
     io::stdin() 
         .read_line(&mut gu)
         .expect("Failed to read line");     //エラーメッセージ
 
-        let gu: u32 = match gu  //変数gu 再利用して定義（文字/数値変換）
+        let gu: u32 = match gu//変数gu 再利用して定義（文字/数値変換）
             .trim()             //空白・改行・行送り文字削除
             .parse()            //変換 Result型 Ok/Err列挙子を返す
             {
