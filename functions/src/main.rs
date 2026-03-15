@@ -1,7 +1,7 @@
 fn main() {
     println!("Hello, world!");
 
-    another_function(500);
+    another_function(700);
 }
 
 fn another_function(x: i32) {

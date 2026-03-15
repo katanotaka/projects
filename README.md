@@ -1,1 +1,9 @@
-数当てゲームのプログラムでrustを学習
+* GitHub Push Workflow *
+1. git init (初回のみ)
+2. git add .
+3. git commit -m "message"
+4. gh repo create [name] --source=. --public --push (初回のみ)
+   (2回目以降は git push)
+
+* If SSH Error *
+eval $(ssh-agent) && ssh-add ~/.ssh/id_ed25519
