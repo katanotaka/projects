@@ -1,1 +1,1 @@
-/home/katanotaka/projects/reference/target/debug/reference: /home/katanotaka/projects/reference/src/main.rs
+/data/data/com.termux/files/home/projects/reference/target/debug/reference: /data/data/com.termux/files/home/projects/reference/src/main.rs
