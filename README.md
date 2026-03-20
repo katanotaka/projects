@@ -8,14 +8,14 @@
 
 mkdir ~/projects && cd ~/projects
 git init
-# GitHubに親リポジトリを作成（すでにある場合は飛ばしてOK）
+### GitHubに親リポジトリを作成（すでにある場合は飛ばしてOK）
 gh repo create projects --public --source=. --remote=origin
 
 2. プロジェクト（reference）の作成
 
 cargo new reference  # referenceフォルダとソースが自動生成される
 cd reference
-# (ここでRustのコードを書く)
+### (ここでRustのコードを書く)
 
 3. 必要なファイルだけを保存してPush
 
@@ -33,7 +33,7 @@ git push -u origin main
 
 git clone https://github.com/katanotaka/projects.git
 cd projects/reference
-# (編集を再開する)
+### (編集を再開する)
 
 🔁 フェーズ3：日々の開発ルーチン（共通）
 ​「編集 → 保存 → 同期」の繰り返し手順です。
@@ -46,7 +46,7 @@ git pull origin main --rebase
 
 2. コードを書いて保存（Commit）
 
-# (コードを編集・保存)
+### (コードを編集・保存)
 git add .
 git commit -m "Update reference: added mutable borrowing"
 
@@ -65,9 +65,8 @@ git push origin main
 ​不要なファイルは add しない
 ​target/ フォルダ（ビルド生成物）は重いので、git add . する際も Cargo.toml がある階層の .gitignore がしっかり効いているか確認しましょう。
 
-​次のステップへの提案
-​これで「プロジェクト管理の基盤」は完璧です！
-​次は、この projects の中に新しく rust-ownership-test のようなフォルダを作って、今まで学んだ「所有権」や「借用」の復習コードをアップロードしてみませんか？やり方が不安なら、最初の手順からガイドしますよ！
+##​これで「プロジェクト管理の基盤」は完璧です！
+
 
 
 
