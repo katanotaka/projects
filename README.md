@@ -14,6 +14,7 @@ gh repo create projects --public --source=. --remote=origin
 2. プロジェクト（reference）の作成
 
 cargo new reference  # referenceフォルダとソースが自動生成される
+
 cd reference
 ### (ここでRustのコードを書く)
 
