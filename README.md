@@ -11,7 +11,6 @@ git init
 # GitHubに親リポジトリを作成（すでにある場合は飛ばしてOK）
 gh repo create projects --public --source=. --remote=origin
 
-
 2. プロジェクト（reference）の作成
 
 cargo new reference  # referenceフォルダとソースが自動生成される
