@@ -17,7 +17,7 @@ fn calculate_length(s: &mut String) -> usize {
 }
 
 fn change(s: &mut String){
-    s.push_str(", w happy orld.");
+    s.push_str(", a Very happy world.");// ハッピー
 }
 
 
