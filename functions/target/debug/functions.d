@@ -1,1 +1,1 @@
-/data/data/com.termux/files/home/project/functions/target/debug/functions: /data/data/com.termux/files/home/project/functions/src/main.rs
+/data/data/com.termux/files/home/projects/functions/target/debug/functions: /data/data/com.termux/files/home/projects/functions/src/main.rs

@@ -7,3 +7,11 @@
 
 * If SSH Error *
 eval $(ssh-agent) && ssh-add ~/.ssh/id_ed25519
+
+
+​🛠️ おすすめのワークフロー（Rust学習用）
+​新しい練習（例えば「借用」）を始める時は、以下の流れが最短です。
+​ディレクトリ作成: mkdir borrowing && cd borrowing
+​プロジェクト初期化: cargo init
+​最初の保存: git add . && git commit -m "init"
+​GitHubへ公開: gh repo create rust-borrowing --source=. --public --push
