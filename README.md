@@ -1,7 +1,7 @@
 
 **「1つの projects リポジトリに複数の学習プロジェクト（reference等）をまとめて管理し、別端末でも同期して開発を続ける」**ための黄金ルーチン
 
-** 🛠️ フェーズ1：最初のセットアップ（端末A）
+# 🛠️ フェーズ1：最初のセットアップ（端末A）
 ​まずは親となる projects を作り、その中に最初の reference を追加します。
 
 ​1. 親リポジトリの作成と初期化
@@ -27,7 +27,7 @@ git add reference/
 git commit -m "Add reference project"
 git push -u origin main
 
-## 🔄 フェーズ2：別端末での再開（端末B）
+# 🔄 フェーズ2：別端末での再開（端末B）
 ​新しい端末（別のPCやスマホ）で、これまでの作業を引き継ぎます。
 
 ​1. まるごとコピー（Clone）する
@@ -36,7 +36,7 @@ git clone https://github.com/katanotaka/projects.git
 cd projects/reference
 ### (編集を再開する)
 
-## 🔁 フェーズ3：日々の開発ルーチン（共通）
+# 🔁 フェーズ3：日々の開発ルーチン（共通）
 ​「編集 → 保存 → 同期」の繰り返し手順です。
 
 ​1. 作業を始める前（最新状態を取り込む）
@@ -55,7 +55,7 @@ git commit -m "Update reference: added mutable borrowing"
 
 git push origin main
 
-## 💡 失敗しないための「3つの鉄則」
+# 💡 失敗しないための「3つの鉄則」
 
 ​.git は親（projects）にだけ置く
 ​各子フォルダ（reference等）の中で git init1 は絶対しないこと。管理が複雑になります。もし間違えて作ったら rm -rf .git で消せばOKです。
