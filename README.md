@@ -6,8 +6,8 @@
 
 ​1. 親リポジトリの作成と初期化
 
-mkdir ~/projects && cd ~/projects
-git init
+mkdir ~/projects && cd ~/projects<br>
+git init <br>
 ### GitHubに親リポジトリを作成（すでにある場合は飛ばしてOK）
 gh repo create projects --public --source=. --remote=origin
 
@@ -22,9 +22,9 @@ cd reference
 
 ​.gitignore が自動生成されているので、ビルド済みの巨大なバイナリなどは除外され、ソースコードのみが対象になります。
 
-cd ~/projects
-git add reference/
-git commit -m "Add reference project"
+cd ~/projects <br>
+git add reference/ <br>
+git commit -m "Add reference project" <br>
 git push -u origin main
 
 # 🔄 フェーズ2：別端末での再開（端末B）
@@ -32,8 +32,8 @@ git push -u origin main
 
 ​1. まるごとコピー（Clone）する
 
-git clone https://github.com/katanotaka/projects.git
-cd projects/reference
+git clone https://github.com/katanotaka/projects.git <br>
+cd projects/reference <br>
 ### (編集を再開する)
 
 # 🔁 フェーズ3：日々の開発ルーチン（共通）
@@ -42,13 +42,13 @@ cd projects/reference
 ​1. 作業を始める前（最新状態を取り込む）
 ​他の端末で書いた内容を忘れないよう、必ず最初に実行します。
 
-cd ~/projects
+cd ~/projects <br>
 git pull origin main --rebase
 
 2. コードを書いて保存（Commit）
 
 ### (コードを編集・保存)
-git add .
+git add . <br>
 git commit -m "Update reference: added mutable borrowing"
 
 3. GitHubへ送り出す（Push）
