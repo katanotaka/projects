@@ -1,4 +1,3 @@
-
 struct User {
     active: bool,
     username: String,
@@ -6,9 +5,7 @@ struct User {
     sign_in_count: u64,
 }
 
-
 fn main() {
-
     let mut user1 = User {
         active: true,
         username: String::from("someusername123"),
