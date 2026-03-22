@@ -13,9 +13,15 @@ fn main() {
         email: String::from("ma@e.com"),
         sign_in_count: 1,
     };
+    let user2 = User {
+        active: user1.active,
+        username: user1.username,
+        email: user1.email,
+        sign_in_count: user1.sign_in_count,
+    }; 
 
-    user1.email = String::from("anotheremail");
-    println!("{}",user1.email);
+    user1.email = String::from("myemail");
+    println!("{}",user2.email);
 
 }
 
