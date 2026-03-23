@@ -6,6 +6,9 @@ struct User {
     sign_in_count: u64,
 }
 
+
+
+
 fn main() {
     let mut user1 = User {
         active: true,
@@ -20,8 +23,17 @@ fn main() {
         sign_in_count: user1.sign_in_count,
     }; 
 
+
+    let user3 = User {
+        email: String::from("same as @example.com"),
+  //      ..user1     // user2 already used so that error occurrs
+        ..user2
+
+    };
+
     user1.email = String::from("myemail");
-    println!("{}",user2.email);
+
+    println!("{}",user3.email);
 
 }
 
