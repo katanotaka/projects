@@ -1,0 +1,51 @@
+
+struct User {
+    active: bool,
+    username: String,
+    email: String,
+    sign_in_count: u64,
+}
+
+
+
+
+fn main() {
+    let mut user1 = User {
+        active: true,
+        username: String::from("na123"),
+        email: String::from("ma@e.com"),
+        sign_in_count: 1,
+    };
+    let user2 = User {
+        active: user1.active,
+        username: user1.username,
+        email: user1.email,
+        sign_in_count: user1.sign_in_count,
+    }; 
+
+
+    let user3 = User {
+        email: String::from("same as @example.com"),
+  //      ..user1     // user2 already used so that error occurrs
+        ..user2
+
+    };
+
+    user1.email = String::from("myemail");
+
+    println!("{}",user3.email);
+
+}
+
+
+//仮引数名と構造体のフィールド名が全く一緒なので、フィールド初期化省略記法
+
+fn build_user(email: String, username: String) -> User {
+    User {
+        active: true,
+        username,   //rya ku ki hou 
+        email,
+        sign_in_count: 1,
+    }
+}
+
