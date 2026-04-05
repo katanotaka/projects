@@ -6,6 +6,10 @@ struct Rectangle {
 }
 
 impl Rectangle {
+    fn width(&self) -> bool {
+        self.width > 0
+    }  
+
     fn area(&self) -> u32 {
         self.width * self.height
     }
@@ -20,9 +24,12 @@ fn main() {
     };
 
     dbg!(&rect2);
-    println!(
-        "The area of the rectangle is {} square pixels.",
-        rect2.area()
-    );
 
+    // 長方形は非ゼロの幅を持っていますか？
+    if rect2.width() {
+        println!(
+            "The area of the rectangle is {} square pixels.",
+            rect2.area()
+        );
+    }
 }
