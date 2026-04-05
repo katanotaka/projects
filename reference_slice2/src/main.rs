@@ -1,12 +1,12 @@
 fn main() {
-    let s = String::from("Hello, world!");
+    let s: &str = "Hello, world!";
     println!("sentence = {s}");
 
     let (word, index) = first_word(&s);
     println!("1st word = {word} (index: {index})");
 }
 
-fn first_word(s: &String) -> (&str, usize) {             //&str（戻り値）：文字列の一部を指す「付箋」
+fn first_word(s: &str) -> (&str, usize) {             //&str（戻り値）：文字列の一部を指す「付箋」
     // 文字列をバイトの配列に変換。これにより、
     // 文字列を1バイトずつ処理できるようになる。
     let bytes = s.as_bytes();
